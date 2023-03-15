@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    row-gap: 10px;
+}
+
+.lable {
+    display: flex;
+    flex-direction: column;
+    color: #212121;
+    font-size: 18px;
+}
+
+.input {
+    height: 35px;
+    border: 2px solid #212121;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+
+    &::placeholder {
+        color: #212121;
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+        border-color: #f00d4e;
+    }
+}

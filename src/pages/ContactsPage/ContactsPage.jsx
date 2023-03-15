@@ -1,21 +1,23 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import ContactList from '../ContactList/ContactList';
-import Filter from '../Filter/Filter';
-import ContactForm from '../ContactForm/ContactForm';
-import { getFilteredContacts } from 'redux/contacts/contacts-selector';
-import { fetchAllContacts} from 'redux/contacts/contacts-operation';
-import styles from './phonebook.module.scss';
 
-const PhoneBook = () => {
+import ContactList from 'components/ContactList/ContactList';
+import Filter from 'components/Filter/Filter';
+import ContactForm from 'components/ContactForm/ContactForm';
+
+import { getFilteredContacts } from 'redux/contacts/contact-selectors';
+import { fetchAllContacts } from 'redux/contacts/contacts-operations';
+
+import styles from './contactsPage.module.scss';
+
+const ContactsPage = () => {
   const filterContacts = useSelector(getFilteredContacts);
   const isContactsFilter = Boolean(filterContacts.length);
-  
-  const dispatch = useDispatch(); 
+
+  const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchAllContacts())
-  }, [dispatch])
-  
+    dispatch(fetchAllContacts());
+  }, [dispatch]);
 
   return (
     <section className={styles.sectionBook}>
@@ -29,4 +31,4 @@ const PhoneBook = () => {
   );
 };
 
-export default PhoneBook;
+export default ContactsPage;

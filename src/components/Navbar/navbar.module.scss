@@ -1,0 +1,10 @@
+.navbarContainer {
+    display: inline-flex;
+    height: 50px;
+    padding: 12px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primaryTextColor);
+}

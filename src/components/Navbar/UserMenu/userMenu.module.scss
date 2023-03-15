@@ -1,0 +1,21 @@
+.button {
+    width: 70px;
+    padding: 3px;
+    background: #212121;
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: #ff6f00;
+    }
+}
+
+.email {
+    margin-right: 20px;
+    color: #212121;
+}

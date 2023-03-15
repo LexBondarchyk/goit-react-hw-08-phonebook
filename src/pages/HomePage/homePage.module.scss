@@ -1,0 +1,48 @@
+.sectionHome {
+    height: calc(100vh - 50px);
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: calc(50% + 25px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsla(0, 0%, 100%, 0.3);
+    border-radius: 20px;
+}
+
+.title {
+    color: #212121;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 45px;
+}
+
+.containerLink {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+}
+
+.contacts,
+.login {
+    color: var(--accentColor);
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+
+    &:hover {
+        color: #ff6f00;
+    }
+}

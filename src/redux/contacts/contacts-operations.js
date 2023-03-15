@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import Notiflix from 'notiflix';
 
-import * as api from 'redux/contacts-api';
+import * as api from 'redux/api/contacts-api';
 
 export const fetchAllContacts = createAsyncThunk(
   'contacts/fetchAll',

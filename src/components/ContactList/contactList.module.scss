@@ -1,42 +1,36 @@
-.list {
-  margin-top: 30px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  list-style: none;
 }
 
 .contactList {
   display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.contactList:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.info {
-  display: flex;
   justify-content: space-between;
-  text-align: left;
-  width: 100%;
+
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contact svg {
+  margin-right: 8px;
+}
+
+.number {
+  font-weight: 500;
 }
 
 .button {
-  margin-left: 30px;
-  padding: 0;
+  width: 70px;
+  background: #fb0c3c;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
   cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  transition: transform 250ms var(--timingFn);
-  color: #00ffff;
-}
 
-.button:hover,
-.button:focus {
-  transform: scale(1.1);
-  color: brown;
+  &:hover,
+  &:focus {
+    background-color: #6a0505;
+  }
 }
